@@ -34,37 +34,88 @@ h1 { margin-bottom: 5px; }
 .tagline { color: #8b35c9; font-weight: bold; }
 p { line-height: 1.6; }
 a {
-  display: block;
-  padding: 14px;
-  margin: 12px 0;
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 13px;
-  text-decoration: none;
-  color: #29213d;
-  font-weight: bold;
-  overflow-wrap: anywhere;
-}
-a:hover { background: #f3e8ff; }
-.whatsapp { background: #dcfce7; }
-.facebook { background: #dbeafe; }
-small { color: #777; }
-</style>
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6c3df4">
+  <title>It's Alomgir Here | Official Profile</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, "Noto Sans Bengali", sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #171044, #5426a8, #e94e91);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 14px;
+    }
+    .profile {
+      width: 100%;
+      max-width: 430px;
+      text-align: center;
+      padding: 32px 22px;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 28px;
+      background: rgba(255,255,255,.12);
+      box-shadow: 0 20px 55px rgba(0,0,0,.25);
+      backdrop-filter: blur(14px);
+    }
+    .photo {
+      width: 142px;
+      height: 142px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 0 25px rgba(255,255,255,.4);
+    }
+    h1 { font-size: 29px; margin: 20px 0 8px; }
+    .handle { color: #ffe4f1; font-size: 16px; }
+    .bio {
+      margin: 18px 0 24px;
+      line-height: 1.7;
+      color: #f5edff;
+    }
+    .links { display: grid; gap: 12px; }
+    .btn {
+      display: block;
+      padding: 14px 18px;
+      border-radius: 14px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform .2s;
+    }
+    .btn:active { transform: scale(.97); }
+    .facebook { background: #1877f2; }
+    .whatsapp { background: #16a34a; }
+    .phone { background: #ef8c35; }
+    .email { background: #6741d9; }
+    footer { margin-top: 25px; font-size: 12px; color: #eee4ff; }
+  </style>
 </head>
 <body>
-<div class="card">
-  <img class="photo" src="profile.jpg" alt="Alomgir Kabir">
-  <h1>Alomgir Kabir</h1>
-  <div class="tagline">It's Alomgir Here</div>
-  <p>Private Job Holder</p>
-  <p>Welcome to my personal profile!</p>
+  <main class="profile">
+    <img class="photo" src="profile.jpg" alt="Alomgir Kabir">
+    <h1>Alomgir Kabir</h1>
+    <div class="handle">It's Alomgir Here ✨</div>
+    <p class="bio">Private Job Holder<br>স্বাগতম আমার ব্যক্তিগত ওয়েবসাইটে!</p>
 
-  <a href="tel:+8801725741316">📞 Call Me: 01725741316</a>
-  <a class="whatsapp" href="https://wa.me/8801916741416">🟢 WhatsApp Me</a>
-  <a href="mailto:alomgirkabir25@gmail.com">✉️ Email Me</a>
-  <a class="facebook" href="https://www.facebook.com/alomgirkabir25">📘 My Facebook</a>
+    <div class="links">
+      <a class="btn facebook" href="https://www.facebook.com/alomgirkabir25" target="_blank" rel="noopener">📘 Facebook</a>
+      <a class="btn whatsapp" href="https://wa.me/8801916741416" target="_blank" rel="noopener">🟢 WhatsApp</a>
+      <a class="btn phone" href="tel:01725741316">📞 Call Me</a>
+      <a class="btn email" href="mailto:alomgirkabir25@gmail.com">✉️ Email Me</a>
+    </div>
 
-  <small>© 2026 Alomgir Kabir</small>
-</div>
+    <footer>© 2026 It's Alomgir Here · Made with ❤️</footer>
+  </main>
+</body>
+</html>
+
 </body>
 </html>
